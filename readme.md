@@ -10,7 +10,7 @@ It is also recommended to work together with your classmates!
 
 Fizzbuzz is often used as a basic way to root out job candidates - often before they ever even reach an interview! So it's to your advantage to be able to do this problem really well!
 
-**Prerequisites:**
+#### Prerequesites
 
 * Writing a function in python
 * Using parameters/arguments in python functions
@@ -65,7 +65,7 @@ buzz
 
 We'll come to a point in our careers as developers where no one gives us clear directions anymore. Instead, we have to do our own research on how to accomplish the objective. Hints are given below, but these are purposely chosen concepts we haven't covered in full!
 
-**Prerequesites:**
+#### Prerequesites
 
 * Writing while loops in python
 * Ability to research something you haven't learned yet
@@ -95,12 +95,11 @@ That is too high!
 That's it! You win!
 ```
 
-> **Hint 1:** User input comes to you as a string. How can you make it into an integer so you can properly compare the user's guess with the `answer` (which is an integer)?
-> **Hint 2:** You can set a variable to `False` or `True`.
+> **Hint:** User input comes to you as a string. How can you make it into an integer so you can properly compare the user's guess with the `answer` (which is an integer)?
 
 ## 3: D'oh!
 
-**Prerequisites:**
+#### Prerequesites
 
 * Ability to research something you haven't learned yet
     * Using `try`/`except` statements and error handling.
