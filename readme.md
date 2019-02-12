@@ -61,7 +61,7 @@ fizz
 buzz
 ```
 
-## 2. Guess a number! 
+## 2. Get a valid guess! 
 
 We'll come to a point in our careers as developers where no one gives us clear directions anymore. Instead, we have to do our own research on how to accomplish the objective. Hints are given below, but these are purposely chosen concepts we haven't covered in full!
 
@@ -69,12 +69,38 @@ We'll come to a point in our careers as developers where no one gives us clear d
 
 * Writing while loops in python
 * Ability to research something you haven't learned yet
-    * including a package to generate random numbers! 
+    * try/except! 
     * Casting a string to an integer!
 
 #### Prompt 
 
-Make your own version of the `Guess a Number` game. Generate a random integer and store it in a variable called `answer`. Print a statement asking the user to guess a number.
+Write a function called `get_guess` that initializes a `my_num` variable to `None`, then uses a `while` loop and `try`/`except` clauses to keep asking the user for input until they enter a number. The function, when called, should prompt the user for a number, and test if the input can be cast to an integer. If it can, then return this integer. If it cannot be cast to an integer, prompt the user for input again.
+
+#### Example Output
+```
+Please give me a number between 1 and 10:
+> no
+That was not good input, please try again!
+Please give me a number between 1 and 10:
+> meh
+That was not good input, please try again!
+Please give me a number between 1 and 10:
+> 5
+```
+
+
+## 3: Guess a number!
+
+#### Prerequesites
+
+* use `while` loops in python
+* write conditionals in python
+* `get_guess` function from #2
+* import a module from the [python standard library](https://docs.python.org/2/library/index.html)
+ 
+#### Prompt
+
+Make your own version of the `Guess a Number` game that uses the `get_guess` function. Import the `random` pythong module and use it to generate a random integer and store it in a variable called `answer`. Initialize a `guess` variable to `false`. Print a statement asking the user to guess a number.
 
 If the user's guess is:
 * Higher than the `answer`: print `That is too high!`.
@@ -86,48 +112,17 @@ Your program should keep prompting the user until they enter the correct answer.
 #### Example Output
 ```
 I'm thinking of a number between 1 and 10.
-Please guess what it is:
-> 4
-That is too low!
-> 8
-That is too high!
-> 6
-That's it! You win!
-```
-
-> **Hint:** User input comes to you as a string. How can you make it into an integer so you can properly compare the user's guess with the `answer` (which is an integer)?
-
-## 3: D'oh!
-
-#### Prerequesites
-
-* Ability to research something you haven't learned yet
-    * Using `try`/`except` statements and error handling.
-    * Using the `continue` keyword inside a loop
-
-
-#### Prompt
-
-Bart Simpson has gotten ahold of your program from Problem 2 and started entering a bunch of values that are NOT numbers! How do you handle it?
-
-Create a new repl with your code from Problem 2 and modify it to print `D'oh! That is NOT a number, Bart!` if the user doesn't enter an integer.
-
-#### Example Output
-```
-I'm thinking of a number between 1 and 10.
-Please guess what it is:
+Please give me a number between 1 and 10:
 > Eat my shorts!
-D'oh! That is NOT a number, Bart!
-Please guess what it is:
+That was not good input, please try again!
+Please give me a number between 1 and 10:
 > Ay, caramba!
-D'oh! That is NOT a number, Bart!
-Please guess what it is:
+That was not good input, please try again!
+Please give me a number between 1 and 10:
 > 5
 That is too low!
-Please guess what it is:
+Please give me a number between 1 and 10:
 > 8
 That's it! You win!
 ```
-
-> **Hint:** The `continue` keyword can be called in a loop and means "skip the rest of this loop iteration." It may be useful to call this in an `except` clause.
 
