@@ -100,12 +100,13 @@ Please give me a number between 1 and 10:
  
 #### Prompt
 
-Make your own version of the `Guess a Number` game that uses the `get_guess` function. Import the `random` pythong module and use it to generate a random integer and store it in a variable called `answer`. Initialize a `guess` variable to `false`. Print a statement asking the user to guess a number.
+Make your own version of the `Guess a Number` game that uses the `get_guess` function. Import the `random` python module and use it to generate a random integer and store it in a variable called `answer`. Initialize a `guess` variable to `false`. Print a statement asking the user to guess a number.
 
 If the user's guess is:
 * Higher than the `answer`: print `That is too high!`.
 * Lower than the `answer`: print `That is too low!`.
 * Exactly the `answer`: print `That's it! You win!`.
+> For a bonus, change the success message to reflect the number of attemps a person made (for example, "It took you 5 tries, but you did it!")
 
 Your program should keep prompting the user until they enter the correct answer.
 
